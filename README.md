@@ -16,4 +16,18 @@ Source Domain과 Target Domain를 유사하게 학습하기 위하여 Backpropag
 
 ## 4. 설계 및 연구 <br/>
 ### 4-1. AI HUB Data set 재구성 <br/>
+![Readme_Image_02](https://raw.githubusercontent.com/DANBEE-MASTER/2021-2-capstone-design2/main/README_Image/Readme_Image_02.png) <br/>
 AI HUB 는 한국지능정보사회진흥원의 사업결과로 지능정보산업 인프라 조성사업으로 추진한 AI 학습용 데이터를 공개한 곳으로 이곳의 데이터를 활용하여 동일 질병 기준으로 [표1]과 같이 Data set을 재구성하여 문제를 정의하였다. 
+### 4-2. DA Model 에 따른 네트워크 성능 측정 <br>
+|구분|S → T|T → S|
+|:------:|:------:|:------:|
+|SOURCE ONLY|0.29|0.47|
+|DANN|⦁|⦁| 
+|TRAIN ON TARGET|0.76|0.70| 
+
+SOURCE ONLY : Source data 만을 사용하여 학습한 뒤 Target data로 성능 측정<br>
+TRAIN ON TARGET : Target data 로 학습하고, Target data 성능 측정<br>
+[표2] DA 모델에 따른 네트워크 성능 측정 결과<br>
+<br>
+## 5. 결론 및 향후 연구 <br/>
+본 논문에서는 Label이 존재하는 고추 작물 Data를 통해 Domain Adaptaiton 모델을 적용하여 여러 작물의 질병 진단 인식 연구를 시도하였다. 본 연구를 통해 DA 모델 구조에 따른 네트워크 성능 차이. 네트워크 성능 극대화 방법을 보임으로써, 스마트팜 작물 질병 진단을 위한 효과적인 방법으로 사용 가능할 것이라고 기대한다.                                     
