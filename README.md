@@ -40,8 +40,8 @@ AI HUB 는 한국지능정보사회진흥원의 사업결과로 지능정보산�
 Base model 으로는 Noise가 많은 Image에 별다른 이미지처리 없이도 Xception 모델에 Imagenet weights를 사용한 경우 90% 이상의 네트워크 성능을 확인하였으며, Source domain을 사용하여 학습한 뒤 Target domain으로 성능을 측정한 결과 ‘Binary classification’의 ‘고추 → 단호박’ Data set에 대해서는 67.2%가 나왔지만, SimCLR 모델을 통해 만든 사전학습모델(Pre-trained model)에 DANN을 사용하여 87.5% 까지 향상된 결과가 나왔음을 확인할 수 있었다. <br/>
 작물마다 Binary classification 문제로 정의하면 질병 초기에 질병 유무 진단을 바로 확인할 수 있고 이를 통해 작물 질병 이미지 검색 서비스 가능 등의 기대효과를 확인할 수 있었다. 하지만 Domain에 다양한 작물이 존재하는 경우 질병이 아닌 작물의 구분을 학습하려는 경향이 있기 때문에 작물에 대한 Debiasing 필요성에 대해 제기한다. <br/>               <br>
 ## ▣ 프로젝트 사용 데이터 + 코드 현황 <br/>
-# github Code 폴더 설명
-|폴더명|class|데이터 설명|
+### github Code 폴더 설명
+|폴더명|class|설명|
 |:------:|:------:|:------:|
 |Research_1_1_1|2|고추   →   단호박|
 |Research_1_2_1|2|단호박   →   고추|
@@ -52,8 +52,8 @@ Base model 으로는 Noise가 많은 Image에 별다른 이미지처리 없이�
 |Research_7_1_1|7|고추+무+가지+상추   →   단호박+파+토마토+양배추|
 |Research_7_2_1|7|단호박+파+토마토+양배추   →   고추+무+가지+상추|
 
-# 데이터 폴더 설명
-|:폴더명:|:폴더 설명:|
+### 데이터 폴더 설명
+|폴더명|설명|
 |:------:|:------:|
 |data_image|image와 image를 numpy로 변환한 파일, image는 용량 문제로 업로드를 못하였고, 변환된 numpy만 있음|
 |data_numpy|image를 numpy로 변환한 파일을 각 훈련데이터로 나누거나 재정의한 파일|
@@ -61,8 +61,8 @@ Base model 으로는 Noise가 많은 Image에 별다른 이미지처리 없이�
 데이터 다운로드 : <a href="https://drive.google.com/drive/folders/1cUa5-hnn_1BPUihtGHZj9UQXHhCjmThr?usp=sharing" target="_blank">[클릭]</a> <br/>
 ※ 데이터 용량이 너무 커 위와 같이 데이터를 별도로 다운 받을 수 있도록 했습니다.<br/>
 
-# 주피터 파일 설명
-|:파일명:|:파일 설명:|
+### 주피터 파일 설명
+|파일명|파일|
 |:------:|:------:|
 |0 - Loading Images and Saving Numpy|Loading Images and Saving Numpy, Data split|
 |1 - Basemodel - Confirmation of Imagnet performance for the base model|Imagenet weights 사용 여부에 따른 네트워크 성능을 확인하기 위한 실험|
