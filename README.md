@@ -51,6 +51,7 @@ Base model 으로는 Noise가 많은 Image에 별다른 이미지처리 없이�
 |Research_7_1_1|7|고추+무+가지+상추   →   단호박+파+토마토+양배추|
 |Research_7_2_1|7|단호박+파+토마토+양배추   →고추+무+가지+상추|
 
-데이터 다운로드 : <a href="https://drive.google.com/drive/folders/1cUa5-hnn_1BPUihtGHZj9UQXHhCjmThr?usp=sharing" target="_blank">[클릭]</a><br/>
+[클릭](https://drive.google.com/drive/folders/1cUa5-hnn_1BPUihtGHZj9UQXHhCjmThr?usp=sharing){:target="_blank"}
+데이터 다운로드 : <a href="https://drive.google.com/drive/folders/1cUa5-hnn_1BPUihtGHZj9UQXHhCjmThr?usp=sharing" target="_blank">[클릭]</a> <br/>
 ※ 데이터 용량이 너무 커 위와 같이 데이터를 별도로 다운 받을 수 있도록 했습니다.<br/>
 
