@@ -28,7 +28,6 @@ AI HUB 는 한국지능정보사회진흥원의 사업결과로 지능정보산�
 - CPU : Intel(R) Xeon(R) CPU @ 2.30GHz , VGG 16 GB, RAM 25.51 GB
 - Base model : Xception (VGG16, DenseNet121, ResNet50, InceptionV3, Xception 네트워크 모델 중 가장 빠른 epoch 만에 높은 성능을 보여준 Xception을 선정하였다)
 - Data set 분리 : Train : Valid : Test   →   6  :  2  :  2
-<br/>
 
 ### 4-3. DANN 네트워크 성능 확인 <br>
 ![Readme_Image_03](https://raw.githubusercontent.com/DANBEE-MASTER/2021-2-capstone-design2/main/README_Image/Readme_Image_03.png) <br/>
