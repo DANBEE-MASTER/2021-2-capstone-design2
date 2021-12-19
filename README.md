@@ -16,7 +16,7 @@ Source Domain과 Target Domain를 유사하게 학습하기 위하여 Backpropag
 
 ## 4. 설계 및 연구 <br/>
 ### 4-1. AI HUB Data set 재구성 <br/>
-![Readme_Image_02](https://raw.githubusercontent.com/DANBEE-MASTER/2021-2-capstone-design2/main/README_Image/Readme_Image_02.png) <br/>
+
 AI HUB 는 한국지능정보사회진흥원의 사업결과로 지능정보산업 인프라 조성사업으로 추진한 AI 학습용 데이터를 공개한 곳으로 이곳의 데이터를 활용하여 동일 질병 기준으로 [표1]과 같이 Data set을 재구성하여 문제를 정의하였다. 
 ### 4-2. DA Model 에 따른 네트워크 성능 측정 <br>
 ![Readme_Image_03](https://raw.githubusercontent.com/DANBEE-MASTER/2021-2-capstone-design2/main/README_Image/Readme_Image_03.png) <br/>
