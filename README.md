@@ -24,7 +24,7 @@ AI HUB 는 한국지능정보사회진흥원의 사업결과로 지능정보산�
 ![Readme_Image_02](https://raw.githubusercontent.com/DANBEE-MASTER/2021-2-capstone-design2/main/README_Image/Readme_Image_02.png){:width="80%" height="80%"} <br/>
 
 ### 4-2. DA Model 에 따른 네트워크 성능 측정 <br>
-![Readme_Image_03](https://raw.githubusercontent.com/DANBEE-MASTER/2021-2-capstone-design2/main/README_Image/Readme_Image_03.png){:width="80%" height="80%"} <br/>
+<img src="https://raw.githubusercontent.com/DANBEE-MASTER/2021-2-capstone-design2/main/README_Image/Readme_Image_03.png" width="80%" height="80%">
 ※ SOURCE ONLY : Source data을 사용하여 학습한 뒤 Target data 성능 측정 <br/>
 ※ TRAIN ON TARGET : Target data로 학습하고, Target data 성능 측정 <br/>
 <br>
