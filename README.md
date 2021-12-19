@@ -54,6 +54,7 @@ Base model 으로는 Noise가 많은 Image에 별다른 이미지처리 없이�
 
 # 데이터 폴더 설명
 |:폴더명:|:폴더 설명:|
+|:------:|:------:|
 |data_image|image와 image를 numpy로 변환한 파일, image는 용량 문제로 업로드를 못하였고, 변환된 numpy만 있음|
 |data_numpy|image를 numpy로 변환한 파일을 각 훈련데이터로 나누거나 재정의한 파일|
 
@@ -62,6 +63,7 @@ Base model 으로는 Noise가 많은 Image에 별다른 이미지처리 없이�
 
 # 주피터 파일 설명
 |:파일명:|:파일 설명:|
+|:------:|:------:|
 |0 - Loading Images and Saving Numpy|Loading Images and Saving Numpy, Data split|
 |1 - Basemodel - Confirmation of Imagnet performance for the base model|Imagenet weights 사용 여부에 따른 네트워크 성능을 확인하기 위한 실험|
 |2 - Xception_model + DANN|Xception_model에 DANN 진행|
