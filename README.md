@@ -21,10 +21,17 @@ Source domain과 Target domain의 domain shift를 좁혀주기 위해 Backpropag
 ## 4. 실험 환경 및 성능 확인 <br/>
 ### 4-1. AI HUB Data set 재구성 <br/>
 AI HUB 는 한국지능정보사회진흥원의 사업결과로 지능정보산업 인프라 조성사업으로 추진한 AI 학습용 데이터를 공개한 곳으로 이곳의 데이터를 활용하여 동일 질병 기준으로 [표1]과 같이 Data set을 재구성하여 문제를 정의하였다. 
-![Readme_Image_02](https://raw.githubusercontent.com/DANBEE-MASTER/2021-2-capstone-design2/main/README_Image/Readme_Image_02.png){:width="80%" height="80%"} <br/>
+![Readme_Image_02](https://raw.githubusercontent.com/DANBEE-MASTER/2021-2-capstone-design2/main/README_Image/Readme_Image_02.png) <br/>
 
-### 4-2. DA Model 에 따른 네트워크 성능 측정 <br>
-<img src="https://raw.githubusercontent.com/DANBEE-MASTER/2021-2-capstone-design2/main/README_Image/Readme_Image_03.png" width="80%" height="80%">
+### 4-2. 실험 환경 <br/>
+- 구글 COLAB PRO
+- CPU : Intel(R) Xeon(R) CPU @ 2.30GHz , VGG 16 GB, RAM 25.51 GB
+- Base model : Xception
+  ⦁ VGG16, DenseNet121, ResNet50, InceptionV3, Xception 네트워크 모델 중 가장 빠른 epoch 만에 높은 성능을 보여준 Xception을 선정하였다.
+- Data set 분리 : Train : Valid : Test   →   6  :  2  :  2
+- 
+### 4-3. DANN 네트워크 성능 확인 <br>
+![Readme_Image_03](https://raw.githubusercontent.com/DANBEE-MASTER/2021-2-capstone-design2/main/README_Image/Readme_Image_03.png) <br/>
 ※ SOURCE ONLY : Source data을 사용하여 학습한 뒤 Target data 성능 측정 <br/>
 ※ TRAIN ON TARGET : Target data로 학습하고, Target data 성능 측정 <br/>
 <br>
