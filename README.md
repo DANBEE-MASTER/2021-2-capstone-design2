@@ -3,9 +3,9 @@
 #### - 지도 교수님 : &nbsp;최진우 교수님 <br/> <br/> <br/>
 
 ## 1. 연구 배경  <br/>
-  농업의 현대화가 많이 진행되었다고는 하나 특정 작물, 반복 동작에 대한 부분적인 기계화만 진행되었을 뿐 진정한 의미의 자동화 스마트팜은 이제서야 막 왕성한 성장 발전을 하고 있다. 또한 농업의 구조상 진입장벽이 높고, 경험 위주의 산업 형태로 핵심 인력의 연령이 높다보니, 젊은 기술자들의 신생 기술이 접목되어 다양한 연구와 서비스가 진행되기에는 오랜 시간이 걸리고 있어, 아직 작물에 대한 질병 Image 검색 서비스 조차 없는 상황이다. <br/>
-  특히 작물에 대한 질병 예측에 관해서는 농업에 대한 경험이 풍부하더라고 신규 작물, 익숙지 않은 작물인 경우 같은 질병이더라도 작물의 형태, 재배 환경에 따라 다르게 보일 수 있기 때문에 정확한 질병을 진단하기가 쉽지 않다. 위와 같은 이유로 확보되어 있는 특정 작물에 대한 label Image data를 통해 classifier를 만든다고 하여도, class는 같지만 다른 작물을 분류하게 되면 class 수에 따른 random 결과값이 나오거나 그보다 못한 성능이 못한다. <br/>
-  작물의 종류가 너무 많아 모든 작물에 대한 Data 확보가 현실적으로 불가능하고 작물 질병에 대한 labeling 또한 쉽지 않거나 생소한 질병인 경우 질병의 label 조차 알 수 없다는 가장 큰 문제가 있다. 이에 따라 ‘작물의 종류는 많지만 질병은 같다’라는 작물의 특징을 이용하여 확보되어 있는 특정 작물에 대한 label Image data를 통해 다른 작물의 질병명을 판단함에 있어 성능을 높이고자 하는 연구를 수행하고자 한다. <br/>
+농업의 현대화가 많이 진행되었다고는 하나 특정 작물, 반복 동작에 대한 부분적인 기계화만 진행되었을 뿐 진정한 의미의 자동화 스마트팜은 이제서야 막 왕성한 성장 발전을 하고 있다. 또한 농업의 구조상 진입장벽이 높고, 경험 위주의 산업 형태로 핵심 인력의 연령이 높다보니, 젊은 기술자들의 신생 기술이 접목되어 다양한 연구와 서비스가 진행되기에는 오랜 시간이 걸리고 있어, 아직 작물에 대한 질병 Image 검색 서비스 조차 없는 상황이다. <br/>
+특히 작물에 대한 질병 예측에 관해서는 농업에 대한 경험이 풍부하더라고 신규 작물, 익숙지 않은 작물인 경우 같은 질병이더라도 작물의 형태, 재배 환경에 따라 다르게 보일 수 있기 때문에 정확한 질병을 진단하기가 쉽지 않다. 위와 같은 이유로 확보되어 있는 특정 작물에 대한 label Image data를 통해 classifier를 만든다고 하여도, class는 같지만 다른 작물을 분류하게 되면 class 수에 따른 random 결과값이 나오거나 그보다 못한 성능이 못한다. <br/>
+작물의 종류가 너무 많아 모든 작물에 대한 Data 확보가 현실적으로 불가능하고 작물 질병에 대한 labeling 또한 쉽지 않거나 생소한 질병인 경우 질병의 label 조차 알 수 없다는 가장 큰 문제가 있다. 이에 따라 ‘작물의 종류는 많지만 질병은 같다’라는 작물의 특징을 이용하여 확보되어 있는 특정 작물에 대한 label Image data를 통해 다른 작물의 질병명을 판단함에 있어 성능을 높이고자 하는 연구를 수행하고자 한다. <br/>
 
 ## 2. 연구 목표  <br/>
 AI HUB의 작물 질병 진단 Image를 재구성하여 label이 있는 Data set을 Source domain, label이 없다고 가정하는 Data set을 Target domain으로 구분하여 Data set을 class에 수에 따라 다양하게 재정의한다. 이후 Base model로 사용할 네트워크 모델을 찾고, Source domain을 사용하여 학습한 뒤 Target domain에 대한 성능 측정을 한다. 
@@ -21,10 +21,10 @@ Source domain과 Target domain의 domain shift를 좁혀주기 위해 Backpropag
 ## 4. 실험 환경 및 성능 확인 <br/>
 ### 4-1. AI HUB Data set 재구성 <br/>
 AI HUB 는 한국지능정보사회진흥원의 사업결과로 지능정보산업 인프라 조성사업으로 추진한 AI 학습용 데이터를 공개한 곳으로 이곳의 데이터를 활용하여 동일 질병 기준으로 [표1]과 같이 Data set을 재구성하여 문제를 정의하였다. 
-![Readme_Image_02](https://raw.githubusercontent.com/DANBEE-MASTER/2021-2-capstone-design2/main/README_Image/Readme_Image_02.png){: width="80%" height="80%"} <br/>
+![Readme_Image_02](https://raw.githubusercontent.com/DANBEE-MASTER/2021-2-capstone-design2/main/README_Image/Readme_Image_02.png){:width="80%" height="80%"} <br/>
 
 ### 4-2. DA Model 에 따른 네트워크 성능 측정 <br>
-![Readme_Image_03](https://raw.githubusercontent.com/DANBEE-MASTER/2021-2-capstone-design2/main/README_Image/Readme_Image_03.png){: width="80%" height="80%"} <br/>
+![Readme_Image_03](https://raw.githubusercontent.com/DANBEE-MASTER/2021-2-capstone-design2/main/README_Image/Readme_Image_03.png){:width="80%" height="80%"} <br/>
 ※ SOURCE ONLY : Source data을 사용하여 학습한 뒤 Target data 성능 측정 <br/>
 ※ TRAIN ON TARGET : Target data로 학습하고, Target data 성능 측정 <br/>
 <br>
