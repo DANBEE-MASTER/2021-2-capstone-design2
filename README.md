@@ -11,7 +11,7 @@
 
 ## 3. 관련 연구 <br/>
 ### 3-1. Unsupervised Domain Adaptation by Backpropagation <br/>
-![Readme_Image_01](https://raw.githubusercontent.com/DANBEE-MASTER/2021-2-capstone-design2/main/README_Image/Readme_Image_01.png) <br/>
+![Readme_Image_01](https://raw.githubusercontent.com/DANBEE-MASTER/2021-2-capstone-design2/main/README_Image/Readme_Image_01.gif) <br/>
 Source Domain과 Target Domain를 유사하게 학습하기 위하여 Backpropagation의 구조에 Gradient reversed layer를 사용하여 Domain label을 잘 분류할 수 없도록 한다. 즉 label predictor은 label을 잘 맞추는 방향으로 업데이트 하고, domain classifier는  domain을 잘 맞추는 방향으로 업데이트 하지만 gradient reversal layer을 통해 domain을 잘 맞추는 방향과 반대 방향으로 업데이트 하여 source domain과 target domain의 차이를 해결한다.
 
 ## 4. 설계 및 연구 <br/>
@@ -19,11 +19,7 @@ Source Domain과 Target Domain를 유사하게 학습하기 위하여 Backpropag
 ![Readme_Image_02](https://raw.githubusercontent.com/DANBEE-MASTER/2021-2-capstone-design2/main/README_Image/Readme_Image_02.png) <br/>
 AI HUB 는 한국지능정보사회진흥원의 사업결과로 지능정보산업 인프라 조성사업으로 추진한 AI 학습용 데이터를 공개한 곳으로 이곳의 데이터를 활용하여 동일 질병 기준으로 [표1]과 같이 Data set을 재구성하여 문제를 정의하였다. 
 ### 4-2. DA Model 에 따른 네트워크 성능 측정 <br>
-|구분|S → T|T → S|
-|:------:|:------:|:------:|
-|SOURCE ONLY|0.29|0.47|
-|DANN|⦁|⦁| 
-|TRAIN ON TARGET|0.76|0.70| 
+![Readme_Image_03](https://raw.githubusercontent.com/DANBEE-MASTER/2021-2-capstone-design2/main/README_Image/Readme_Image_03.png) <br/>
 
 SOURCE ONLY : Source data 만을 사용하여 학습한 뒤 Target data로 성능 측정<br>
 TRAIN ON TARGET : Target data 로 학습하고, Target data 성능 측정<br>
