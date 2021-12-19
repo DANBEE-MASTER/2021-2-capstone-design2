@@ -55,10 +55,10 @@ Base model 으로는 Noise가 많은 Image에 별다른 이미지처리 없이�
 ### 데이터 폴더 설명
 |폴더명|설명|
 |:------:|:------:|
-|data_image|image와 image를 numpy로 변환한 파일, image는 용량 문제로 업로드를 못하였고, 변환된 numpy만 있음|
+|data_image|image와 image를 numpy로 변환한 파일|
 |data_numpy|image를 numpy로 변환한 파일을 각 훈련데이터로 나누거나 재정의한 파일|
 
-데이터 다운로드 : <a href="https://drive.google.com/drive/folders/1cUa5-hnn_1BPUihtGHZj9UQXHhCjmThr?usp=sharing" target="_blank">[클릭]</a> <br/>
+데이터 다운로드 : <a href="https://o365khu-my.sharepoint.com/:f:/g/personal/danbee_office_khu_ac_kr/EjyhAPKLQqtAje7rCdzrSVcBo7n2HV1JxH6Y0LXKcjvF5w?e=4u3Fe7" target="_blank">[클릭]</a> <br/>
 ※ 데이터 용량이 너무 커 위와 같이 데이터를 별도로 다운 받을 수 있도록 했습니다.<br/>
 
 ### 주피터 파일 설명
